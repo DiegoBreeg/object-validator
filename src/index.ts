@@ -1,17 +1,15 @@
 import { GetRules } from './GetRules'
 
 
-
-
-
-export class ObjectValidator {
+class ObjectValidator {
+    public GetRules = GetRules
     public ruleList: Array<object> = []
     public dummyList: Array<object> = []
 
 
     validate(dummy: object, rule: any): boolean {
 
-        const getRules = new GetRules()
+        const getRules = new this.GetRules()
         const result = getRules.execute(dummy, rule)
         this.ruleList = result[0]
         this.dummyList = result[1]
@@ -20,3 +18,6 @@ export class ObjectValidator {
         return false
     }
 }
+
+
+exports.ObjectValidator = ObjectValidator
