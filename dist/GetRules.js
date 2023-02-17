@@ -19,9 +19,9 @@ class GetRules {
                 this.ruleList.push(({ key: prop, value: 'number' }));
         }
         for (let prop in dummy) {
-            if (typeof dummy[prop] == 'object' && !Array.isArray(rule[prop]))
+            if (typeof dummy[prop] == 'object' && !Array.isArray(dummy[prop]))
                 this.dummyList.push({ key: prop, value: 'object' });
-            if (typeof dummy[prop] == 'object' && Array.isArray(rule[prop]))
+            if (typeof dummy[prop] == 'object' && Array.isArray(dummy[prop]))
                 this.dummyList.push(({ key: prop, value: 'array' }));
             if (typeof dummy[prop] == 'string')
                 this.dummyList.push(({ key: prop, value: 'string' }));

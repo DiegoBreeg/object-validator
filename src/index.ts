@@ -20,5 +20,14 @@ class ObjectValidator {
     }
 }
 
+const obj = new ObjectValidator()
+
+const dummy = {name: 'diego', age: 27, hobbies: ['programing', 'gaming'], body: {hair: 'brown', eyes: 'blue'}}
+const rule = {name: String, age: Number, hobbies: [], body: []}
+
+const response = obj.validate(dummy, rule)
+console.log(response)
+
+
 
 exports.ObjectValidator = ObjectValidator

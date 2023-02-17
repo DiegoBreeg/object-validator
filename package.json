@@ -1,6 +1,6 @@
 {
   "name": "object-validatordb",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Library to validate an object from object rules",
   "main": "./dist/index.js",
   "scripts": {
