@@ -1,4 +1,4 @@
-import {GetRules} from './GetRules'
+import { GetRules } from './GetRules'
 
 class ObjectValidator {
     public ruleList: Array<object> = []
@@ -6,16 +6,17 @@ class ObjectValidator {
 
 
     validate(dummy: object, rule: any): boolean {
-        
-        const getRules = new GetRules()         
+
+        const getRules = new GetRules()
         const result = getRules.execute(dummy, rule)
         this.ruleList = result[0]
         this.dummyList = result[1]
-        if(this.ruleList.toString() === this.dummyList.toString())
+        if (this.ruleList.toString() === this.dummyList.toString())
             return true
         return false
     }
 }
 
 
-module.exports = ObjectValidator
+module.exports = { ObjectValidator }
+exports.ObjectValidator = ObjectValidator

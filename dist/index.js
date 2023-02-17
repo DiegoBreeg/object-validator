@@ -16,5 +16,5 @@ class ObjectValidator {
         return false;
     }
 }
-module.exports = ObjectValidator;
+module.exports = { ObjectValidator };
 //# sourceMappingURL=index.js.map
