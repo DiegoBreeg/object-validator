@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ObjectValidator = void 0;
 const GetRules_1 = require("./GetRules");
-exports.ObjectValidator = class ObjectValidator {
+class ObjectValidator {
     constructor() {
         this.ruleList = [];
         this.dummyList = [];
@@ -15,5 +16,6 @@ exports.ObjectValidator = class ObjectValidator {
             return true;
         return false;
     }
-};
+}
+exports.ObjectValidator = ObjectValidator;
 //# sourceMappingURL=index.js.map

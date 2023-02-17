@@ -4,7 +4,7 @@ import { GetRules } from './GetRules'
 
 
 
-exports.ObjectValidator = class ObjectValidator {
+export class ObjectValidator {
     public ruleList: Array<object> = []
     public dummyList: Array<object> = []
 
