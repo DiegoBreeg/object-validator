@@ -1,6 +1,6 @@
 import {GetRules} from './GetRules'
 
-export class ObjectValidator {
+class ObjectValidator {
     public ruleList: Array<object> = []
     public dummyList: Array<object> = []
 
@@ -16,3 +16,6 @@ export class ObjectValidator {
         return false
     }
 }
+
+
+module.exports = ObjectValidator

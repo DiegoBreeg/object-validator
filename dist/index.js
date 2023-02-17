@@ -16,8 +16,5 @@ class ObjectValidator {
         return false;
     }
 }
-const dummy = { name: 'diego', age: 27, hobbies: [], objeto: {} };
-const rule = { name: String, age: Number, hobbies: [], objeto: {} };
-const objectValidator = new ObjectValidator();
-console.log(objectValidator.validate(dummy, rule));
+module.exports = ObjectValidator;
 //# sourceMappingURL=index.js.map
