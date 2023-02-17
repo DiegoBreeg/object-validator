@@ -17,4 +17,5 @@ class ObjectValidator {
     }
 }
 module.exports = { ObjectValidator };
+exports.ObjectValidator = ObjectValidator;
 //# sourceMappingURL=index.js.map
