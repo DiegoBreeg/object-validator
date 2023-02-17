@@ -1,6 +1,10 @@
 import { GetRules } from './GetRules'
 
-class ObjectValidator {
+
+
+
+
+exports.ObjectValidator = class ObjectValidator {
     public ruleList: Array<object> = []
     public dummyList: Array<object> = []
 
@@ -16,7 +20,3 @@ class ObjectValidator {
         return false
     }
 }
-
-
-module.exports = { ObjectValidator }
-exports.ObjectValidator = ObjectValidator
