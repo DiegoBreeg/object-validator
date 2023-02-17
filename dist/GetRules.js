@@ -16,7 +16,7 @@ class GetRules {
             if (rule[prop] == String)
                 this.ruleList.push(({ key: prop, value: 'string' }));
             if (rule[prop] == Number)
-                this.ruleList.push(({ key: prop, value: 'string' }));
+                this.ruleList.push(({ key: prop, value: 'number' }));
         }
         for (let prop in dummy) {
             if (typeof dummy[prop] == 'object' && !Array.isArray(rule[prop]))
@@ -26,7 +26,7 @@ class GetRules {
             if (typeof dummy[prop] == 'string')
                 this.dummyList.push(({ key: prop, value: 'string' }));
             if (typeof dummy[prop] == 'number')
-                this.dummyList.push(({ key: prop, value: 'string' }));
+                this.dummyList.push(({ key: prop, value: 'number' }));
         }
         return [this.ruleList, this.dummyList];
     }

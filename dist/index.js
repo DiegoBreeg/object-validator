@@ -12,7 +12,7 @@ class ObjectValidator {
         const result = getRules.execute(dummy, rule);
         this.ruleList = result[0];
         this.dummyList = result[1];
-        if (this.ruleList.toString() === this.dummyList.toString())
+        if (JSON.stringify(this.ruleList) === JSON.stringify(this.dummyList))
             return true;
         return false;
     }
