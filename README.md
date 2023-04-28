@@ -13,10 +13,13 @@ Import or require the library to your code and instantiate
 const  {ObjectValidator} = require('object-validatordb')
 const validator = new ObjectValidator()
 ```
-validator has a method called validate() that takes two parameters
--dummy: which will receive the object to be validated.
+Validator has a method called validate() that takes two parameters
+dummy: which will receive the object to be validated.
 -rules: an object with the validation rules.
-If dummy follows the rules described in rules validator returns ture, otherwise it returns false
+If dummy follows the rules described in rules validator returns tur, otherwise it returns false
+```js
+ObjectValidator.validate(dummy: any, rule: any): boolean
+```
 
 ```js
 const dummy = { name: 'Joe', lastName: 'doe', age: 27}
