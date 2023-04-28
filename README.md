@@ -8,7 +8,7 @@ Install this library:
 ```bash
 $ npm i object-validatordb
 ```
-
+Import or require the library to yout code
 ```js
-
+const  {ObjectValidator} = require('object-validatordb')
 ```
