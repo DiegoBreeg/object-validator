@@ -16,7 +16,7 @@ const validator = new ObjectValidator()
 Validator has a method called `validate()` that takes two parameters.<br>
 -dummy: which will receive the object to be validated.<br>
 -rules: an object with the validation rules.<br>
-If dummy follows the rules described in rules validator returns tur, otherwise it returns false
+If dummy follows the rules described in rules validator returns true, otherwise it returns false
 ```js
 ObjectValidator.validate(dummy: any, rule: any): boolean
 ```
@@ -31,4 +31,22 @@ validator.validate(dummy, rules) //true
 const dummy = { name: 'Joe', lastName: 'doe'}
 const rules = {name: String, lastName: String, age: Number}
 validator.validate(dummy, rules) //false
+```
+Rules also accepts Arrays and Objects.
+```js
+const dummy = {
+    name: 'Joe',
+    lastName: 'Doe',
+    age: 27,
+    hobbies: ['programing', 'read books', 'commit to github' ]
+}
+
+const rules = {
+    name: String,
+    lastName: String,
+    age: Number,
+    hobbies: []
+}
+
+validator.validate(dummy, rules) //true
 ```
