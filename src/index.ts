@@ -2,9 +2,9 @@ import { GetRules } from './GetRules'
 
 
 class ObjectValidator {
-    public GetRules = GetRules
-    public ruleList: Array<object> = []
-    public dummyList: Array<object> = []
+    private GetRules = GetRules
+    private ruleList: Array<object> = []
+    private dummyList: Array<object> = []
 
 
     validate(dummy: object, rule: any): boolean {
