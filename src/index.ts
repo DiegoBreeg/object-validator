@@ -2,23 +2,20 @@ import { GetRules } from './GetRules'
 
 
 class ObjectValidator {
-    private GetRules = GetRules
-    private ruleList: Array<object> = []
-    private dummyList: Array<object> = []
+    validate(dummy: object, rule: any): boolean {        
+        let ruleList: Array<object> = []
+        let dummyList: Array<object> = []
 
-
-    validate(dummy: object, rule: any): boolean {
-
-        const getRules = new this.GetRules()
+        const getRules = new GetRules()
         const result = getRules.execute(dummy, rule)
-        this.ruleList = result[0]
-        this.dummyList = result[1]
+        ruleList = result[0]
+        dummyList = result[1]
 
-        if (JSON.stringify(this.ruleList) === JSON.stringify( this.dummyList))
+        if (JSON.stringify(ruleList) === JSON.stringify(dummyList))
             return true
         return false
     }
 }
 
-
 exports.ObjectValidator = ObjectValidator
+export {ObjectValidator}
