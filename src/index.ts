@@ -16,5 +16,5 @@ class ObjectValidator {
     }
 }
 
-exports.ObjectValidator = ObjectValidator
+//exports.ObjectValidator = ObjectValidator
 export { ObjectValidator }

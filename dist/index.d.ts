@@ -1,4 +1,4 @@
 declare class ObjectValidator {
-    validate(dummy: object, rule: any): boolean;
+    validate(dummy: object, rule: object): boolean;
 }
 export { ObjectValidator };

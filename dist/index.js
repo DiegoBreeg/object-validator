@@ -15,5 +15,4 @@ class ObjectValidator {
     }
 }
 exports.ObjectValidator = ObjectValidator;
-exports.ObjectValidator = ObjectValidator;
 //# sourceMappingURL=index.js.map
