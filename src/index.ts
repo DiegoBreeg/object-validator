@@ -2,14 +2,13 @@ import { GetRules } from './GetRules'
 
 
 class ObjectValidator {
-    validate(dummy: object, rule: any): boolean {        
-        let ruleList: Array<object> = []
-        let dummyList: Array<object> = []
+    validate(dummy: object, rule: any): boolean {
 
         const getRules = new GetRules()
         const result = getRules.execute(dummy, rule)
-        ruleList = result[0]
-        dummyList = result[1]
+        const ruleList = result[0]
+        const dummyList = result[1]
+        console.log(dummyList, ruleList)
 
         if (JSON.stringify(ruleList) === JSON.stringify(dummyList))
             return true
@@ -18,4 +17,4 @@ class ObjectValidator {
 }
 
 exports.ObjectValidator = ObjectValidator
-export {ObjectValidator}
+export { ObjectValidator }
