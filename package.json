@@ -1,10 +1,13 @@
 {
   "name": "object-validatordb",
-  "version": "1.0.30",
+  "version": "1.0.31",
   "description": "Library to validate an object from object rules",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "repository": "/DiegoBreeg/object-validator",  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DiegoBreeg/object-validator.git"
+  },  
   "scripts": {
     "git": "git add . && git commit -a -m'add types file' && git push",
     "start": "clear && tsc && node ./dist/index.js",
