@@ -7,8 +7,7 @@ class ObjectValidator {
         const getRules = new GetRules()
         const result = getRules.execute(dummy, rule)
         const ruleList = result[0]
-        const dummyList = result[1]
-        console.log(dummyList, ruleList)
+        const dummyList = result[1]        
 
         if (JSON.stringify(ruleList) === JSON.stringify(dummyList))
             return true

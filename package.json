@@ -1,6 +1,6 @@
 {
   "name": "object-validatordb",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "description": "Library to validate an object from object rules",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -9,7 +9,7 @@
     "url": "https://github.com/DiegoBreeg/object-validator.git"
   },  
   "scripts": {
-    "git": "git add . && git commit -a -m'add types file' && git push",
+    "git": "git add . && git commit -a -m'remove console message' && git push",
     "start": "clear && tsc && node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
