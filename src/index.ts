@@ -2,7 +2,7 @@ import { GetRules } from './GetRules'
 
 
 class ObjectValidator {
-    validate(dummy: object, rule: any): boolean {
+    validate(dummy: object, rule: object): boolean {
 
         const getRules = new GetRules()
         const result = getRules.execute(dummy, rule)
