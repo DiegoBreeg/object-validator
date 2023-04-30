@@ -6,7 +6,6 @@ export class GetRules {
     execute(dummy: any, rule: any): Array<any> {
 
         for (let prop in rule) {
-
             if (typeof rule[prop] == 'object' && !Array.isArray(rule[prop]))
                 this.ruleList.push({ key: prop, value: 'object' })
             if (typeof rule[prop] == 'object' && Array.isArray(rule[prop]))
